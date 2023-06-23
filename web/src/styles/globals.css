@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  a {
+    @apply no-underline;
+  }
+
+  /* SCROLLBAR - style for firefox */
+  * {
+    scrollbar-color: #318fbe #39322f; /* scroll thumb and track color */
+  }
+
+  /* SCROLLBAR - style for chrome */
+  ::-webkit-scrollbar {
+    @apply h-1 w-1 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brandSecondary;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bgDark;
+  }
+
+  /* CONTAINER - Usado para dar um espaçamento esquerdo e direito */
+  .wrapper {
+    @apply mx-auto w-[96%] max-w-7xl;
+  }
+
+  /* Use to add accessibility focus to an element focus:ring-offset-bgWhite is color to background */
+  .accessibilityFocus {
+    @apply focus-visible:outline-none focus-visible:ring-brandPrimary focus-visible:ring-offset-2 focus-visible:ring-offset-bgLight focus-visible:focus:ring-2;
+  }
+
+  /* FONTES - Estilos de fontes do projeto, obs definir fonte-family */
+  .headline1 {
+    @apply text-8xl font-normal -tracking-[.094rem];
+  }
+  .headline2 {
+    @apply text-6xl font-normal -tracking-[.031rem];
+  }
+  .headline3 {
+    @apply text-5xl font-normal tracking-normal;
+  }
+  .headline4 {
+    @apply text-4xl font-normal tracking-[.016rem];
+  }
+  .headline5 {
+    @apply text-2xl font-normal tracking-normal;
+  }
+  .headline6 {
+    @apply text-xl font-medium tracking-[.009rem];
+  }
+  .subtitle1 {
+    @apply text-lg font-normal tracking-[.009rem];
+  }
+  .subtitle2 {
+    @apply text-base font-medium tracking-[.006rem];
+  }
+  .body1 {
+    @apply text-base font-normal tracking-[.031rem];
+  }
+  .body2 {
+    @apply text-sm font-normal tracking-[.016rem];
+  }
+  .button {
+    @apply text-sm font-medium uppercase leading-5 tracking-[.078rem];
+  }
+  .caption {
+    @apply text-xs font-normal tracking-[.025rem];
+  }
+  .font-overline {
+    @apply text-xs font-normal uppercase tracking-[.094rem];
+  }
+}
