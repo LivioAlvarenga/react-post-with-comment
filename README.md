@@ -15,9 +15,9 @@
 
 &nbsp;
 
-![react-post-with-comment](https://github.com/LivioAlvarenga/aluroni/blob/master/files/capa.gif?raw=true#vitrinedev)
+![react-post-with-comment](https://github.com/LivioAlvarenga/react-post-with-comment/blob/main/web/public/Monitor_laptop_Tablet_Celular-Fundos_limpos.png?raw=true#vitrinedev)
 
-![react-post-with-comment](https://github.com/LivioAlvarenga/aluroni/blob/master/files/404.gif?raw=true)
+![react-post-with-comment](https://github.com/LivioAlvarenga/react-post-with-comment/blob/main/web/public/phone-hand-laptop.png?raw=true)
 
 <a id="-sobre-o-projeto"></a>
 
@@ -38,7 +38,7 @@ A aplicação utilizou a metodologia mobile first e foi desenvolvida com o objet
 <p>
 
 <p align="center">
-  <a href= "https://vercel.com/"><img alt="deploy badge Vercel" height=40 src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/fc06a7aa8d0f8ed5f446dcd83efd842e810d77df/files/vercel-badge.svg"></a>
+  <a href= "https://react-post-with-comment.vercel.app/"><img alt="deploy badge Vercel" height=40 src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/fc06a7aa8d0f8ed5f446dcd83efd842e810d77df/files/vercel-badge.svg"></a>
 <p>
 
 &nbsp;
