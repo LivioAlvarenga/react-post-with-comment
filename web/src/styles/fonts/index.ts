@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display as Playfair } from 'next/font/google'
 // import localFont from 'next/font/local'
 
 const inter400 = Inter({
@@ -15,6 +15,13 @@ const inter700 = Inter({
   display: 'swap',
 })
 
+const playfair400 = Playfair({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-playfair400',
+  display: 'swap',
+})
+
 // To use personal fonts, add localFontName.woff2 in web/src/styles/fonts folder
 // const localFont = localFont({
 //   src: './localFontName.woff2',
@@ -24,4 +31,4 @@ const inter700 = Inter({
 // })
 // Don't forget to export localFont below
 
-export { inter400, inter700 }
+export { inter400, inter700, playfair400 }

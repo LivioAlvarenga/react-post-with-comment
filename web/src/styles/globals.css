@@ -14,7 +14,7 @@ body {
 
   /* SCROLLBAR - style for firefox */
   * {
-    scrollbar-color: #318fbe #39322f; /* scroll thumb and track color */
+    scrollbar-color: #26a9e0 #29292e; /* scroll thumb and track color */
   }
 
   /* SCROLLBAR - style for chrome */
@@ -22,10 +22,10 @@ body {
     @apply h-1 w-1 rounded-full;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-brandSecondary;
+    @apply bg-primary;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-bgDark;
+    @apply bg-dark-300;
   }
 
   /* CONTAINER - Usado para dar um espaçamento esquerdo e direito */
@@ -33,49 +33,49 @@ body {
     @apply mx-auto w-[96%] max-w-7xl;
   }
 
-  /* Use to add accessibility focus to an element focus:ring-offset-bgWhite is color to background */
+  /* Use to add accessibility focus to an element focus:ring-offset- is color to background */
   .accessibilityFocus {
-    @apply focus-visible:outline-none focus-visible:ring-brandPrimary focus-visible:ring-offset-2 focus-visible:ring-offset-bgLight focus-visible:focus:ring-2;
+    @apply focus-visible:outline-none focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-dark-500 focus-visible:focus:ring-2;
   }
 
   /* FONTES - Estilos de fontes do projeto, obs definir fonte-family */
   .headline1 {
-    @apply text-8xl font-normal -tracking-[.094rem];
+    @apply text-8xl font-normal leading-normal -tracking-[.094rem] lg:max-w-[calc(96px_*_30)];
   }
   .headline2 {
-    @apply text-6xl font-normal -tracking-[.031rem];
+    @apply text-6xl font-normal leading-normal -tracking-[.031rem] lg:max-w-[calc(60px_*_30)];
   }
   .headline3 {
-    @apply text-5xl font-normal tracking-normal;
+    @apply text-5xl font-normal leading-normal tracking-normal lg:max-w-[calc(48px_*_30)];
   }
   .headline4 {
-    @apply text-4xl font-normal tracking-[.016rem];
+    @apply text-4xl font-normal leading-normal tracking-[.016rem] lg:max-w-[calc(36px_*_30)];
   }
   .headline5 {
-    @apply text-2xl font-normal tracking-normal;
+    @apply text-2xl font-normal leading-normal tracking-normal lg:max-w-[calc(24px_*_30)];
   }
   .headline6 {
-    @apply text-xl font-medium tracking-[.009rem];
+    @apply text-xl font-medium leading-normal tracking-[.009rem] lg:max-w-[calc(20px_*_30)];
   }
   .subtitle1 {
-    @apply text-lg font-normal tracking-[.009rem];
+    @apply text-lg font-normal leading-relaxed tracking-[.009rem] lg:max-w-[calc(18px_*_30)];
   }
   .subtitle2 {
-    @apply text-base font-medium tracking-[.006rem];
+    @apply text-base font-medium leading-relaxed tracking-[.006rem] lg:max-w-[calc(16px_*_30)];
   }
   .body1 {
-    @apply text-base font-normal tracking-[.031rem];
+    @apply text-base font-normal leading-loose tracking-[.031rem] lg:max-w-[calc(16px_*_30)];
   }
   .body2 {
-    @apply text-sm font-normal tracking-[.016rem];
+    @apply text-sm font-normal leading-loose tracking-[.016rem] lg:max-w-[calc(14px_*_30)];
   }
   .button {
-    @apply text-sm font-medium uppercase leading-5 tracking-[.078rem];
+    @apply text-sm font-medium uppercase leading-tight tracking-[.078rem];
   }
   .caption {
-    @apply text-xs font-normal tracking-[.025rem];
+    @apply text-xs font-normal leading-relaxed tracking-[.025rem] sm:max-w-[calc(12px_*_30)];
   }
   .font-overline {
-    @apply text-xs font-normal uppercase tracking-[.094rem];
+    @apply text-xs font-normal uppercase leading-relaxed tracking-[.094rem];
   }
 }

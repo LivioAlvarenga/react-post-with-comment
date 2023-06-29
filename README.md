@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	Template Projeto NextJs 13 APP diretório.
+	Projeto de post com comentário utilizando o Nextjs 13 App Router, React, Typescript e Tailwindcss.
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -8,16 +8,24 @@
  <a href="#-instalação">Instalações</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
  <a href="#-deploy">Deploy</a> •
+ <a href="#-good-habits">Good habits</a> •
  <a href="#-autor">Autor</a> • 
  <a href="#-licença">Licença</a>
 </p>
 
 &nbsp;
+
+![react-post-with-comment](https://github.com/LivioAlvarenga/aluroni/blob/master/files/capa.gif?raw=true#vitrinedev)
+
+![react-post-with-comment](https://github.com/LivioAlvarenga/aluroni/blob/master/files/404.gif?raw=true)
+
 <a id="-sobre-o-projeto"></a>
 
 ## 💻 Sobre o projeto
 
-🚀 Inicie rapidamente seu projeto com nosso template para NextJs 13. Pré-configurado com NodeJs, TypeScript, JavaScript, React, Tailwind, Dotenv, ZodJs, EsLint e Prettier, este template acelera seu fluxo de trabalho e permite que você se concentre no que realmente importa.
+🚀 Criei uma aplicação React utilizando o Nextjs 13 App Router e reciclei meu conhecimento sobre os conceitos mais importantes do React, entre eles estão componentização, propriedades, estados, imutabilidade e hooks. O projeto utilizou React, Typescript e Tailwind CSS.
+
+A aplicação utilizou a metodologia mobile first e foi desenvolvida com o objetivo de criar um post com comentários.
 
 &nbsp;
 
@@ -42,10 +50,10 @@
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | --- |
-| :sparkles: Nome       | **Template**                                                                                           |
-| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Typescript, Nextjs, React, Tailwind, Dotenv, ZodJs, EsLint e prettier. |     |
+| :placard: Vitrine.Dev |                                                                                                |
+| --------------------- | ---------------------------------------------------------------------------------------------- | --- |
+| :sparkles: Nome       | **Template**                                                                                   |
+| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Typescript, Nextjs, React, Tailwind, ZodJs, EsLint e prettier. |     |
 
 ---
 
@@ -66,7 +74,6 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://nextjs.org/"><img alt="Next.js badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/d0444795ba750206fa52326b03a097df76171407/files/nextjs-badge.svg"></a>
   <a href= "https://reactjs.org/"><img alt="React badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/d0444795ba750206fa52326b03a097df76171407/files/react-badge.svg"></a>
   <a href= "https://tailwindcss.com/"><img alt="Tailwind CSS badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=06b6d4&logo=Tailwind CSS&label=Style&message=Tailwind CSS&color=06b6d4"></a>
-  <a href= "https://www.dotenv.org/" target="_blank" rel="noopener noreferrer"><img alt="Dotenv badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/4eed338fdcd547570ed365f2b344e43c8202e88f/files/dotenv-badge.svg"></a>
   <a href= "https://zod.dev/" target="_blank" rel="noopener noreferrer"><img alt="ZOD badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/7caba2f743ee9b61f0225a22da57466ecb67097c/files/zod-badge.svg"></a>
   <a href= "https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer"><img alt="vscode download" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/vsCode-badge.svg"></a>
   <a href= "https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer"><img alt="code formatter prettier" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/prettier-badge.svg"></a>
@@ -108,18 +115,6 @@ npx create-next-app@latest
 ```
 
 _Create **`.nvmrc`** file with version of NodeJs to use in project_
-&nbsp;
-
-### **.env** architecture
-
-```bash
-npm install dotenv # Install dotenv to use environment variables in NodeJs
-```
-
-_Create **`.env`** file with all environment variables and gitignore this file_
-
-_Edit **`.env.example`** file with all environment variables and not gitignore this file_
-
 &nbsp;
 
 ### Configurando **ESlint and Prettier**
@@ -190,8 +185,8 @@ npm install zod # Install zod to use types in NodeJs and validate data
 ### 🧭 Rodando a aplicação (Modo desenvolvimento)
 
 ```bash
-git clone https://github.com/livioalvarenga/Template-Api-Rest-Node-Docker-Prisma.git # Clone este repositório
-cd Template-Api-Rest-Node-Docker-Prisma # Acesse a pasta do projeto no seu terminal/cmd
+git clone https://github.com/LivioAlvarenga/react-post-with-comment # Clone este repositório
+cd react-post-with-comment # Acesse a pasta do projeto no seu terminal/cmd
 npm install # Instale as dependências
 npm run dev # Execute a aplicação em modo de desenvolvimento, a aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
@@ -231,6 +226,177 @@ As variáveis de ambiente configuradas incluem:
 ---
 
 &nbsp;
+<a id="-good-habits"></a>
+
+## ✅ Good Habits
+
+&nbsp;
+
+### ❗ 1 - export default function Vs export function
+
+&nbsp;
+
+Em resumo, a diferença fundamental entre essas duas abordagens de exportação reside na forma como são importadas em outros arquivos. export default function Home() permite um pouco mais de flexibilidade na nomenclatura ao importar, enquanto export function Home() requer que você especifique exatamente o nome da função que está importando.
+
+```javascript
+export default function Home() {}
+
+import MyHome from "./Home";
+```
+
+```javascript
+export function Home() {}
+
+import { Home } from "./Home";
+```
+
+Para garantir esta boa pratica de código, foi instalado o plugin **eslint-plugin-import** e configurado no arquivo **`.eslintrc.json`**. Excluindo os arquivos **`page.tsx`** e **`layout.tsx`** que no NextJs usa o export default.
+
+```json
+"overrides": [
+    {
+      "files": [
+        "**/*.tsx"
+      ],
+      "excludedFiles": [
+        "*page.tsx",
+        "*layout.tsx"
+      ],
+      "plugins": [
+        "import"
+      ],
+      "rules": {
+        "import/no-default-export": "error"
+      }
+    }
+  ]
+```
+
+&nbsp;
+
+### ❗ 2 - Programação Imperativa Vs Programação Declarativa
+
+&nbsp;
+
+**Programação Imperativa:**  
+A programação imperativa é uma lista detalhada de instruções passo a passo para o computador. É o "como" fazer algo. É semelhante a uma receita de cozinha.
+
+Exemplo: Em JavaScript puro ou jQuery, você pode limpar um campo de entrada de formulário da seguinte maneira:
+
+```javascript
+function handleCrateNewComment(event: FormEvent) {
+  event.preventDefault();
+  event.target.name.value = "";
+}
+```
+
+Nesse exemplo, você está dizendo explicitamente ao navegador para limpar o valor do campo.
+
+**Programação Declarativa:**
+A programação declarativa envolve o "o quê" fazer, sem especificar o "como". Você declara o resultado desejado, e o computador descobre como chegar lá.
+
+Exemplo: No React, ao invés de manipular o DOM diretamente, você declara o estado do seu componente e deixa o React cuidar das mudanças no DOM.
+
+```javascript
+function handleCrateNewComment(event: FormEvent) {
+  event.preventDefault();
+
+  setComments([...comments, newCommentText]);
+  setNewCommentText("");
+}
+```
+
+Em resumo, a programação imperativa envolve controle manual e instruções específicas, enquanto a programação declarativa envolve descrever o resultado desejado e deixar o sistema descobrir como realizá-lo.
+
+É uma boa pratica usar sempre que possível a programação declarativa no React, pois ela é mais fácil de ler e entender, e também é mais fácil de manter e reutilizar.
+
+&nbsp;
+
+### ❗ 3 - Porque não usar index como key
+
+&nbsp;
+
+Em React, a propriedade key é muito importante quando se lida com listas de componentes. Essa key ajuda o React a identificar quais itens foram alterados, adicionados ou removidos, o que auxilia o algoritmo de diferenças do React (também conhecido como **_Reconciliation_**) a fazer seu trabalho de forma mais eficiente.
+
+Vamos para o exemplo de uma lista de comentários. Cada comentário pode ser um componente, e se você está renderizando uma lista desses componentes, o React precisa de uma maneira de identificar cada um deles unicamente.
+
+Aqui estão algumas situações nas quais o React decide se um componente deve ser renderizado:
+
+- **Quando o estado muda**: Se o estado interno de um componente muda, o React vai renderizar esse componente novamente.
+
+- **Quando a propriedade muda**: Se as propriedades (props) que um componente recebe mudam, o React renderiza esse componente novamente.
+
+- **Quando um componente pai renderiza**: Se um componente pai renderiza, todos os seus componentes filhos também vão renderizar.
+
+Se `você usa o índice do item na lista como key`, isso pode causar problemas se a ordem dos itens mudar. O React usa a key para decidir se um componente é "o mesmo" que um componente anterior com a mesma key.
+
+Se um item da lista se mover, o React vê que a key em sua posição anterior desapareceu e uma nova apareceu em outra posição. Isso faz com que o React descarte o componente antigo e crie um novo, mesmo que eles representem o mesmo item da lista.
+
+Isso não é apenas ineficiente, mas também pode causar problemas se o componente tiver estado que deve ser preservado.
+
+Portanto, `é recomendado usar algo que identifique unicamente cada item da lista como key`, como um ID do item, por exemplo. Isso garante que, mesmo se a ordem dos itens mudar, o React ainda saberá que é o mesmo item e reutilizará o componente existente em vez de criar um novo.
+
+```jsx
+{
+  comments.map((comment) => <Comment key={comment.id} data={comment} />);
+}
+```
+
+No exemplo acima, mesmo se a ordem dos comentários mudar, cada componente Comment continuará correspondendo ao mesmo comentário, pois estamos usando comment.id como key, o que não muda quando a ordem dos comentários muda. Isso resulta em uma renderização mais eficiente.
+
+&nbsp;
+
+### ❗ 4 - Entendendo a Atualização do Estado no React e a Importância das Closures
+
+&nbsp;
+
+```javascript
+const [likeCount, setLikeCount] = useState(0);
+function handleLikeComment() {
+  setLikeCount((state) => {
+    return state + 1;
+  });
+}
+```
+
+Neste exemplo, estamos usando a versão de `setLikeCount` que aceita uma função como argumento. Essa função recebe o estado anterior como argumento e retorna o novo estado. Esta é uma abordagem segura quando o novo estado depende do estado anterior, pois garantimos que estamos sempre trabalhando com o valor mais atual do estado.
+
+```javascript
+const [likeCount, setLikeCount] = useState(0);
+function handleLikeComment() {
+  setLikeCount(likeCount + 1);
+}
+```
+
+Neste exemplo, estamos usando a versão de `setLikeCount` que aceita um valor direto como argumento. Esse valor é calculado com base no valor atual de `likeCount` no momento em que `setLikeCount` é chamado. No entanto, se chamarmos `setLikeCount` duas vezes na mesma função de manipulação de eventos, o estado não será atualizado corretamente.
+
+```javascript
+const [likeCount, setLikeCount] = useState(0);
+function handleLikeComment() {
+  setLikeCount(likeCount + 1);
+  setLikeCount(likeCount + 1);
+}
+```
+
+Se tivermos esse código, poderíamos esperar que cada chamada para `handleLikeComment` incrementasse `likeCount` em 2. No entanto, isso não acontece. Em vez disso, `likeCount` é incrementado apenas em 1.
+
+Isso ocorre porque, no momento em que `setLikeCount` é chamado pela primeira vez, `likeCount` ainda tem seu valor original. O estado não é atualizado imediatamente quando `setLikeCount` é chamado; em vez disso, o React "agenda" a atualização para ocorrer mais tarde. Quando `setLikeCount` é chamado pela segunda vez, `likeCount` ainda tem o mesmo valor que tinha antes, então estamos basicamente agendando a mesma atualização duas vezes.
+
+Para resolver esse problema e garantir que `likeCount` seja incrementado corretamente, devemos usar a versão de setLikeCount que aceita uma função como argumento:
+
+```javascript
+const [likeCount, setLikeCount] = useState(0);
+function handleLikeComment() {
+  setLikeCount((state) => state + 1);
+  setLikeCount((state) => state + 1);
+}
+```
+
+> Agora, cada chamada para `handleLikeComment` incrementará `likeCount` em 2, como esperado. Isso ocorre porque, ao usar uma função como argumento para `setLikeCount`, garantimos que sempre trabalhamos com o valor mais atual do estado, mesmo se múltiplas atualizações forem agendadas na mesma função de manipulação de eventos.
+
+---
+
+&nbsp;
 <a id="-autor"></a>
 
 ## 🦸 Autor
@@ -264,3 +430,7 @@ Olá, eu sou Livio Alvarenga, Engenheiro de Produção | Dev Back-end e Front-en
 Este projeto é [MIT licensed](./LICENSE).
 
 ##### _#CompartilheConhecimento_
+
+```
+
+```
