@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-start">
       <Header />
-      <h1 className="wrapper headline6 sm:headline4 lg:headline2 mt-5 font-playfair400  text-zinc-700  sm:text-center lg:max-w-5xl">
+      <h1 className="wrapper headline6 sm:headline4 lg:headline2 mt-5 font-playfair400 text-tGray  sm:text-center lg:max-w-5xl">
         Projeto de post com comentário utilizando{' '}
         <b style={textShadow}>Nextjs 13 App Router</b>, React, Typescript e
         Tailwindcss.
