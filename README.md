@@ -23,9 +23,19 @@
 
 ## 💻 Sobre o projeto
 
-🚀 Criei uma aplicação React utilizando o Nextjs 13 App Router e reciclei meu conhecimento sobre os conceitos mais importantes do React, entre eles estão componentização, propriedades, estados, imutabilidade e hooks. O projeto utilizou React, Typescript e Tailwind CSS.
+🚀 O projeto "Projeto de post com comentário utilizando o Nextjs 13 App Router, React, Typescript e Tailwindcss" é uma aplicação desenvolvida utilizando tecnologias como Next.js, React, TypeScript e Tailwind CSS. O objetivo do projeto é criar um post com comentários, utilizando os conceitos mais importantes do React, como componentização, propriedades, estados, imutabilidade e hooks.
 
-A aplicação utilizou a metodologia mobile first e foi desenvolvida com o objetivo de criar um post com comentários.
+A metodologia mobile first foi utilizada no desenvolvimento da aplicação, visando uma experiência responsiva em dispositivos móveis. Além disso, foram adotadas diversas tecnologias e ferramentas para garantir boas práticas de desenvolvimento, tais como Node.js, ZodJs para validação de dados de entrada, Eslint e Prettier para padronização de código, Dotenv para variáveis de ambiente, Tailwind CSS para estilização, Next.js para renderização do lado do servidor (SSR) e TypeScript para tipagem estática.
+
+O projeto foi implantado na plataforma Vercel.com, que permite hospedar e implantar facilmente aplicações Next.js.
+
+Durante o desenvolvimento, também foi abordado o tema da diferença entre as abordagens de exportação "export default" e "export function" no JavaScript/TypeScript, destacando suas características e flexibilidades na importação de módulos.
+
+Outro tópico abordado foi a diferença entre programação imperativa e programação declarativa. Foram explicados os conceitos e exemplos de cada abordagem, ressaltando a vantagem da programação declarativa no desenvolvimento com React, devido à sua facilidade de leitura, entendimento, manutenção e reutilização.
+
+Além disso, foi discutida a importância de utilizar uma chave (key) única para cada item em uma lista renderizada no React. Foi explicado como o React utiliza essa chave para identificar alterações na lista e como o uso inadequado de uma chave baseada no índice pode levar a problemas de renderização ineficiente e perda de estado.
+
+Por fim, foi abordada a importância das closures e a atualização correta do estado no React. Foram apresentados exemplos demonstrando como o uso da função de atualização de estado (setState) que recebe uma função como argumento garante que sempre trabalhemos com o valor mais atual do estado, evitando problemas de atualização incorreta quando múltiplas atualizações são agendadas na mesma função de manipulação de eventos.
 
 &nbsp;
 
@@ -46,14 +56,15 @@ A aplicação utilizou a metodologia mobile first e foi desenvolvida com o objet
 ---
 
 &nbsp;
+
 <a id="-vitrine-dev"></a>
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                                |
-| --------------------- | ---------------------------------------------------------------------------------------------- | --- |
-| :sparkles: Nome       | **Template**                                                                                   |
-| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Typescript, Nextjs, React, Tailwind, ZodJs, EsLint e prettier. |     |
+| :placard: Vitrine.Dev |                                                                                                       |
+| --------------------- | ----------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **Projeto de post com comentário utilizando o Nextjs 13 App Router, React, Typescript e Tailwindcss** |
+| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Typescript, Nextjs, React, Tailwind, ZodJs, EsLint e prettier.        |
 
 ---
 
@@ -179,6 +190,10 @@ npm install zod # Install zod to use types in NodeJs and validate data
 - Uso de Eslint para padronização de código;
 - Uso de Prettier para padronização de código;
 - Uso de Dotenv para variáveis de ambiente;
+- Uso de TailwindCSS para estilização;
+- Uso de NextJs para SSR;
+- Uso de TypeScript para tipagem estática;
+- Uso de NextJs com App Router para rotas;
 
 &nbsp;
 
@@ -430,7 +445,3 @@ Olá, eu sou Livio Alvarenga, Engenheiro de Produção | Dev Back-end e Front-en
 Este projeto é [MIT licensed](./LICENSE).
 
 ##### _#CompartilheConhecimento_
-
-```
-
-```
